@@ -3,7 +3,7 @@
   "displayName": "Puzzle Framework",
   "description": "PuzzleJS framework support",
   "publisher": "PuzzleFramework",
-  "icon": "icons/puzzle.png",
+  "icon": "assets/puzzle.png",
   "version": "1.1.0",
   "repository": {
 		"type": "git",
