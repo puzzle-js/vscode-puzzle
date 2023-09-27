@@ -2,6 +2,7 @@
   "name": "puzzle-framework",
   "displayName": "Puzzle Framework",
   "description": "PuzzleJS framework support",
+  "publisher": "PuzzleFramework",
   "icon": "icons/puzzle.png",
   "version": "1.0.0",
   "repository": {
