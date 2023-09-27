@@ -1,0 +1,74 @@
+{
+	"name": "Puzzle",
+	"patterns": [
+		{
+			"begin": "<script>",
+			"end": "</script>",
+			"beginCaptures": {
+				"0": {
+					"name": "source.js.embedded"
+				}
+			},
+			"endCaptures": {
+				"0": {
+					"name": "source.js.embedded"
+				}
+			},
+			"contentName": "source.js",
+			"patterns": [
+				{
+					"include": "source.js"
+				}
+			]
+		},
+		{
+			"begin": "<template>",
+			"end": "</template>",
+			"beginCaptures": {
+				"0": {
+					"name": "source.html.embedded"
+				}
+			},
+			"endCaptures": {
+				"0": {
+					"name": "source.html.embedded"
+				}
+			},
+			"contentName": "text.html",
+			"patterns": [
+				{
+					"include": "text.html.basic"
+				}
+			]
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.puzzle",
+					"match": "\\b(fragment)\\b"
+				}
+			]
+		}
+	},
+	"scopeName": "source.puzzle",
+	"fileTypes": [".puzzle", "puzzle.html"],
+	"injections": {
+		"source.puzzle": {
+			"patterns": [
+				{
+					"begin": "\\$\\{",
+					"end": "\\}",
+					"name": "source.js.embedded",
+					"contentName": "source.js",
+					"patterns": [
+						{
+							"include": "source.js"
+						}
+					]
+				}
+			]
+		}
+	}
+}

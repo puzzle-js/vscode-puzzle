@@ -1,0 +1,48 @@
+{
+  "name": "puzzle-framework",
+  "displayName": "Puzzle Framework",
+  "description": "PuzzleJS framework support",
+  "icon": "icons/puzzle.png",
+  "version": "1.0.0",
+  "repository": {
+		"type": "git",
+		"url": "https://github.com/puzzle-js/vscode-puzzle"
+	},
+	"bugs": "https://github.com/puzzle-js/vscode-puzzle/issues",
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "puzzle",
+        "aliases": [
+          "Puzzle",
+          "puzzle"
+        ],
+        "extensions": [
+          ".puzzle",
+          ".puzzle.html"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "puzzle",
+        "scopeName": "source.puzzle",
+        "path": "./syntaxes/puzzle.tmLanguage.json"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "puzzle-icons",
+        "label": "Puzzle Icons",
+        "path": "./icons/theme.json"
+      }
+    ]
+  }
+}
