@@ -1,0 +1,17 @@
+{
+	"Inject js": {
+		"prefix": ["js"],
+		"body": ["${$0}"],
+		"description": "Enters into a js injection for puzzle template."
+	},
+	"If Statement Template": {
+		"prefix": ["if"],
+		"body": ["${if($0){}\n\n${}}"],
+		"description": "An if statement for puzzle template."
+	},
+	"Puzzle Fragment": {
+		"prefix": ["fragment"],
+		"body": ["<fragment from=\"$1\" name=\"$0\"></fragment>"],
+		"description": "A puzzle fragment."
+	}
+}
